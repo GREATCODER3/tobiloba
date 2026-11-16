@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f7f5f0;
+    color: #25231f;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+header h1,
+footer h2 {
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a,
+footer a {
+    color: #25231f;
+    text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+    background-color: #39332e;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+    opacity: 0.75;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.hero-text p {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero-text h2 {
+    margin: 12px 0 25px;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: white;
+    color: #25231f;
+    text-decoration: none;
+}
+
+.about {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.about h2,
+.collection > h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.about p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.collection {
+    padding: 25px 8% 75px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filters button {
+    padding: 9px 16px;
+    border: 1px solid #bbb6ab;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.filters button.active,
+.filters button:hover {
+    background-color: #25231f;
+    color: white;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin: 12px 0 5px;
+}
+
+.product p {
+    margin-top: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px 20px 75px;
+}
+
+.contact h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.contact p {
+    color: #666;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb6ab;
+    background-color: white;
+    font: inherit;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    align-self: flex-start;
+    padding: 11px 22px;
+    border: none;
+    background-color: #25231f;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    padding: 35px 8%;
+    background-color: #25231f;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 38px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        gap: 15px;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+}
