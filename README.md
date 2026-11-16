@@ -1,1 +1,1 @@
-# tobiloba
+Elvaro is a fictional fashion website designed to showcase elegant clothing and accessories. Built with HTML, CSS and JAVASCRIPT, it features product collections, interactive shopping features, contact form validation and responsive layouts for mobile, tablets and desktop devices.
